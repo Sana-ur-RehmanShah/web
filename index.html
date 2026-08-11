@@ -1,0 +1,938 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sunny Shoots — Creative Content Agency</title>
+    <meta
+      name="description"
+      content="Sunny Shoots is the creative agency for ambitious brands that want to look sharper, move faster, and turn attention into growth. AI content, motion & editing, and content production."
+    />
+    <meta name="theme-color" content="#0a0710" />
+
+    <!-- Open Graph -->
+    <meta
+      property="og:title"
+      content="Sunny Shoots — We Create Content That Converts"
+    />
+    <meta
+      property="og:description"
+      content="AI-powered commercials, motion & editing, and content production for ambitious brands."
+    />
+    <meta property="og:type" content="website" />
+
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/animation.css" />
+    <link rel="stylesheet" href="css/responsive.css?v=20260811-video-fix" />
+
+    <!--
+    Central config. This is the only place these values need editing.
+    Every CTA / email / social link on the page reads from here via
+    data-contact hooks handled in interactions.js.
+  -->
+    <script>
+      window.SunnyShootsConfig = {
+        CONTACT_EMAIL: "sunnyshootsai@gmail.com",
+        INSTAGRAM_URL: "https://www.instagram.com/sunnyshoots.ai",
+        UPWORK_URL: "https://www.upwork.com/freelancers/sanaurrehmans",
+        INTRO_YOUTUBE_URL: "https://youtu.be/rgzyvS8VlYY?si=usWJ3rUp7TTrSFGR",
+      };
+    </script>
+  </head>
+  <body>
+    <!-- Persistent ambient lavender lighting behind all sections -->
+    <div class="ambient-bg" aria-hidden="true">
+      <div class="ambient-bg__glow ambient-bg__glow--1"></div>
+      <div class="ambient-bg__glow ambient-bg__glow--2"></div>
+      <div class="ambient-bg__glow ambient-bg__glow--3"></div>
+    </div>
+
+    <!-- Custom cursor (desktop only, controlled via interactions.js) -->
+    <div class="cursor-ring" id="cursor-ring" aria-hidden="true"></div>
+
+    <a href="#hero" class="skip-link">Skip to content</a>
+
+    <!-- ============ NAVIGATION ============ -->
+    <header id="site-header">
+      <nav class="navbar" id="navbar" aria-label="Primary">
+        <div class="navbar__inner container">
+          <a
+            href="#hero"
+            class="navbar__brand"
+            aria-label="Sunny Shoots — Home"
+          >
+            Sunny Shoots
+          </a>
+
+          <ul class="navbar__links" id="navbar-links">
+            <li><a href="#featured-work" class="navbar__link">Work</a></li>
+            <li><a href="#services" class="navbar__link">Services</a></li>
+            <li><a href="#trust" class="navbar__link">About</a></li>
+            <li><a href="#contact" class="navbar__link">Contact</a></li>
+          </ul>
+
+          <div class="navbar__actions">
+            <a
+              href="mailto:?subject=Start%20a%20Project"
+              data-contact="email"
+              class="btn btn--primary navbar__cta"
+            >
+              Start a project
+              <span class="navbar__cta-arrow" aria-hidden="true">&rarr;</span>
+            </a>
+
+            <button
+              type="button"
+              class="navbar__toggle"
+              id="navbar-toggle"
+              aria-label="Open menu"
+              aria-expanded="false"
+              aria-controls="navbar-mobile-menu"
+            >
+              <span class="navbar__toggle-bar"></span>
+              <span class="navbar__toggle-bar"></span>
+              <span class="navbar__toggle-bar"></span>
+            </button>
+          </div>
+        </div>
+
+        <div
+          class="navbar__mobile-menu"
+          id="navbar-mobile-menu"
+          role="dialog"
+          aria-modal="true"
+          aria-label="Mobile navigation"
+        >
+          <ul class="navbar__mobile-links">
+            <li><a href="#featured-work" class="navbar__link">Work</a></li>
+            <li><a href="#services" class="navbar__link">Services</a></li>
+            <li><a href="#trust" class="navbar__link">About</a></li>
+            <li><a href="#contact" class="navbar__link">Contact</a></li>
+          </ul>
+          <a
+            href="mailto:?subject=Start%20a%20Project"
+            data-contact="email"
+            class="btn btn--primary navbar__cta navbar__cta--mobile"
+          >
+            Start a project
+            <span class="navbar__cta-arrow" aria-hidden="true">&rarr;</span>
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- ============ HERO ============ -->
+      <section id="hero" aria-label="Introduction">
+        <div class="hero__bg" aria-hidden="true">
+          <div class="hero__mesh hero__mesh--1"></div>
+          <div class="hero__mesh hero__mesh--2"></div>
+          <div class="hero__mesh hero__mesh--3"></div>
+        </div>
+
+        <div class="container hero__container">
+          <div class="hero__content">
+            <span class="badge reveal-up">
+              <span class="badge__dot" aria-hidden="true"></span>
+              Top-Rated Creative Partner
+            </span>
+
+            <h1 class="hero__heading reveal-up">
+              We Create Content<br />That Converts.
+            </h1>
+
+            <p class="hero__subtext reveal-up">
+              Sunny Shoots is the creative agency for ambitious brands that want
+              to look sharper, move faster, and turn attention into growth.
+            </p>
+
+            <div class="hero__actions reveal-up">
+              <a
+                href="mailto:?subject=Start%20a%20Project"
+                data-contact="email"
+                class="btn btn--primary btn--lg"
+              >
+                Start Project
+                <span aria-hidden="true">&rarr;</span>
+              </a>
+              <a href="#portfolio" class="btn btn--ghost btn--lg" data-scroll>
+                View Our Work
+                <span aria-hidden="true">&rarr;</span>
+              </a>
+            </div>
+          </div>
+
+          <aside class="hero__card reveal-up" aria-label="Studio note">
+            <span class="hero__card-label">Always On</span>
+            <p class="hero__card-text">Ideas with<br />commercial instinct.</p>
+            <span class="hero__card-line" aria-hidden="true"></span>
+          </aside>
+        </div>
+
+        <div class="hero__scroll-cue" aria-hidden="true">
+          <span>Scroll to Explore</span>
+          <span class="hero__scroll-cue-dot">✦</span>
+        </div>
+
+        <!-- Atmospheric blend layer: dissolves the hero into Trust with no hard edge -->
+        <div class="hero__fade" aria-hidden="true"></div>
+      </section>
+
+      <!-- ============ TRUST METRICS ============ -->
+      <section id="trust" aria-label="Trust metrics">
+        <div class="container">
+          <div class="trust-bar reveal-up">
+            <div
+              class="trust-item"
+              data-counter
+              data-target="250"
+              data-suffix="+"
+            >
+              <span class="trust-item__value"
+                ><span class="trust-item__number">0</span
+                ><span class="trust-item__suffix">+</span></span
+              >
+              <span class="trust-item__label">Projects Delivered</span>
+            </div>
+            <div
+              class="trust-item"
+              data-counter
+              data-target="100"
+              data-suffix="%"
+            >
+              <span class="trust-item__value"
+                ><span class="trust-item__number">0</span
+                ><span class="trust-item__suffix">%</span></span
+              >
+              <span class="trust-item__label">Job Success Score</span>
+            </div>
+            <div
+              class="trust-item"
+              data-counter
+              data-target="3000"
+              data-suffix="+"
+            >
+              <span class="trust-item__value"
+                ><span class="trust-item__number">0</span
+                ><span class="trust-item__suffix">+</span></span
+              >
+              <span class="trust-item__label">Client Hours</span>
+            </div>
+            <div
+              class="trust-item"
+              data-counter
+              data-target="9"
+              data-suffix="+"
+            >
+              <span class="trust-item__value"
+                ><span class="trust-item__number">0</span
+                ><span class="trust-item__suffix">+</span></span
+              >
+              <span class="trust-item__label">Years Experience</span>
+            </div>
+            <div class="trust-item trust-item--rated">
+              <span class="trust-item__value trust-item__value--icon">
+                <span class="trust-item__sparkle" aria-hidden="true">✦</span>
+              </span>
+              <span class="trust-item__label">Top Rated Plus</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ INTRO VIDEO ============ -->
+      <section id="intro-video" aria-label="Introduction video">
+        <div class="container">
+          <div class="intro-video reveal-up">
+            <div class="intro-video__meta">
+              <h2 class="intro-video__heading">A window into how we think.</h2>
+              <button
+                type="button"
+                class="intro-video__btn"
+                id="intro-video-mute"
+                aria-pressed="false"
+              >
+                <span id="intro-video-mute-label">Unmute</span>
+              </button>
+            </div>
+
+            <div class="intro-video__frame" id="intro-video-frame">
+              <div
+                id="intro-video-player"
+                class="intro-video__media"
+                aria-label="Sunny Shoots showreel"
+              ></div>
+
+              <!-- Intentional click/drag scrubber; pointer movement elsewhere never seeks. -->
+              <div
+                class="intro-video__scrub"
+                id="intro-video-scrub"
+                role="slider"
+                tabindex="0"
+                aria-label="Video progress"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                aria-valuenow="0"
+              >
+                <div
+                  class="intro-video__scrub-fill"
+                  id="intro-video-scrub-fill"
+                ></div>
+              </div>
+
+              <button
+                type="button"
+                class="intro-video__fullscreen"
+                id="intro-video-fullscreen"
+                aria-label="Watch fullscreen"
+              >
+                &#8599;
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ BRANDS ============ -->
+      <section id="brands" aria-label="Brands we've worked with">
+        <p class="section-eyebrow section-eyebrow--center">
+          Brands We&rsquo;ve Worked With
+        </p>
+
+        <div class="marquee" data-marquee>
+          <div class="marquee__track" id="marquee-track">
+            <!-- Logo marquee rendered by interactions.js from #brands-data -->
+          </div>
+        </div>
+
+        <!--
+        Brand roster. Each entry needs a name, a logo path under
+        assets/logos/, and an optional link. Nothing here is a real
+        or implied client relationship until real logos are added.
+      -->
+        <script type="application/json" id="brands-data">
+          [
+            {
+              "name": "",
+              "logo": "assets/logos/b1.png",
+              "url": ""
+            },
+            {
+              "name": "Lovart",
+              "logo": "assets/logos/b2.png",
+              "url": ""
+            },
+            {
+              "name": "SYNTX AI",
+              "logo": "assets/logos/b3.png",
+              "url": ""
+            },
+            {
+              "name": "ImagineArt",
+              "logo": "assets/logos/b4.png",
+              "url": ""
+            },
+            {
+              "name": "FemuraX",
+              "logo": "",
+              "url": ""
+            },
+            {
+              "name": "",
+              "logo": "assets/logos/b6.png",
+              "url": ""
+            },
+            {
+              "name": "",
+              "logo": "assets/logos/b7.png",
+              "url": ""
+            }
+          ]
+        </script>
+      </section>
+
+      <!-- ============ FEATURED WORK ============ -->
+      <section id="featured-work" aria-label="Featured work">
+        <div class="container">
+          <div class="section-header">
+            <div>
+              <p class="section-eyebrow">Featured Work</p>
+              <h2 class="section-title">Work made to move.</h2>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel" data-carousel>
+          <div class="carousel__track" id="featured-carousel-track">
+            <!-- Featured work cards injected by interactions.js from #featured-work-data -->
+          </div>
+        </div>
+
+        <!--
+        Each entry needs: title, youtubeUrl, poster (optional).
+        Change "title" to relabel a card — no markup changes required.
+      -->
+        <script type="application/json" id="featured-work-data">
+          [
+            {
+              "title": "Motion Graphics",
+              "youtubeUrl": "https://youtube.com/shorts/Twp0Fpzo8yI",
+              "poster": ""
+            },
+            {
+              "title": "Product Commercial",
+              "youtubeUrl": "https://youtube.com/shorts/Riz1GMcQwuo",
+              "poster": ""
+            },
+            {
+              "title": "Talking Head",
+              "youtubeUrl": "https://youtube.com/shorts/HXCXx50WMhw",
+              "poster": ""
+            },
+            {
+              "title": "Product Promotion",
+              "youtubeUrl": "https://youtube.com/shorts/dlTH4A7D8Ww",
+              "poster": ""
+            },
+            {
+              "title": "Product Ad",
+              "youtubeUrl": "https://youtube.com/shorts/107n_-u8aIo",
+              "poster": ""
+            },
+            {
+              "title": "Talking Head",
+              "youtubeUrl": "https://youtube.com/shorts/x1xFnQ5VogU",
+              "poster": ""
+            },
+            {
+              "title": "UGC Commercial",
+              "youtubeUrl": "https://youtube.com/shorts/G_gCuB04ND0",
+              "poster": ""
+            },
+            {
+              "title": "AI Commercial",
+              "youtubeUrl": "https://youtube.com/shorts/EIwrZB3JMPQ",
+              "poster": ""
+            },
+            {
+              "title": "Talking Head",
+              "youtubeUrl": "https://youtube.com/shorts/Z1_ptVsrPCw",
+              "poster": ""
+            },
+            {
+              "title": "Brand Campaign",
+              "youtubeUrl": "https://youtube.com/shorts/j7hZK9oc4T0",
+              "poster": ""
+            }
+          ]
+        </script>
+      </section>
+
+      <!-- ============ SERVICES ============ -->
+      <section id="services" aria-label="Services">
+        <div class="container">
+          <p class="section-eyebrow">Services</p>
+          <h2 class="section-title">Built for the scroll.</h2>
+
+          <div class="services-grid">
+            <article class="service-card reveal-up">
+              <span class="service-card__index">01</span>
+              <h3 class="service-card__title">AI Content</h3>
+              <p class="service-card__desc">
+                AI-powered commercials, product campaigns, social content and
+                cinematic visuals designed to make modern brands stand out.
+              </p>
+              <ul class="service-card__list">
+                <li>AI Commercials</li>
+                <li>AI Product Videos</li>
+                <li>AI Hypermotion Videos</li>
+                <li>AI Product Campaigns</li>
+                <li>AI Social Content</li>
+              </ul>
+            </article>
+
+            <article class="service-card reveal-up">
+              <span class="service-card__index">02</span>
+              <h3 class="service-card__title">Motion &amp; Editing</h3>
+              <p class="service-card__desc">
+                High-impact editing, motion graphics and short-form storytelling
+                built to keep attention and strengthen your brand.
+              </p>
+              <ul class="service-card__list">
+                <li>Talking Head Videos</li>
+                <li>Short-form Editing</li>
+                <li>Motion Graphics</li>
+                <li>Brand Films</li>
+                <li>Post-production</li>
+              </ul>
+            </article>
+
+            <article class="service-card reveal-up">
+              <span class="service-card__index">03</span>
+              <h3 class="service-card__title">Content Production</h3>
+              <p class="service-card__desc">
+                Photography, videography and original visual production for
+                brands that need content made from the ground up.
+              </p>
+              <ul class="service-card__list">
+                <li>Photography</li>
+                <li>Videography</li>
+                <li>Product Shoots</li>
+                <li>Brand Content</li>
+                <li>Visual Storytelling</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ PROCESS ============ -->
+      <section id="process" aria-label="Our process">
+        <div class="container">
+          <p class="section-eyebrow">Process</p>
+          <h2 class="section-title">How a project moves.</h2>
+
+          <ol class="process-list">
+            <li class="process-step reveal-up">
+              <span class="process-step__index">01</span>
+              <h3 class="process-step__title">Discovery</h3>
+              <p class="process-step__desc">
+                We learn your brand, goals and audience before anything is made.
+              </p>
+            </li>
+            <li class="process-step reveal-up">
+              <span class="process-step__index">02</span>
+              <h3 class="process-step__title">Creative Direction</h3>
+              <p class="process-step__desc">
+                Concepts, scripts and visual direction are shaped around what
+                converts.
+              </p>
+            </li>
+            <li class="process-step reveal-up">
+              <span class="process-step__index">03</span>
+              <h3 class="process-step__title">Production</h3>
+              <p class="process-step__desc">
+                Filming, AI generation, editing and motion work happen in tight
+                cycles.
+              </p>
+            </li>
+            <li class="process-step reveal-up">
+              <span class="process-step__index">04</span>
+              <h3 class="process-step__title">Delivery</h3>
+              <p class="process-step__desc">
+                Polished, platform-ready content lands in your hands, on
+                schedule.
+              </p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- ============ TESTIMONIALS ============ -->
+      <section id="testimonials" aria-label="Client testimonials">
+        <div class="container">
+          <p class="section-eyebrow">Client Words</p>
+          <h2 class="section-title">Good work gets remembered.</h2>
+
+          <div class="testimonials-grid" id="testimonials-grid">
+            <!-- Testimonial cards injected by interactions.js from #testimonials-data.
+               If no real testimonials are configured, a neutral empty state renders
+               instead of fabricated content. -->
+          </div>
+        </div>
+
+        <!--
+        Each entry needs: quote, author, role. Optional: rating, avatar.
+        Leave this array empty ( [] ) until approved testimonial content is ready.
+      -->
+        <!-- DEMO DATA ONLY: replace these fictional entries with verified testimonials before publishing. -->
+        <script type="application/json" id="testimonials-data">
+          [
+            {
+              "author": "Daniel Weber",
+              "role": "Content Creator & YouTuber",
+              "quote": "Sana really understood the pacing I was going for. The edits felt clean, natural, and kept the videos engaging without overdoing the effects."
+            },
+            {
+              "author": "Emily Carter",
+              "role": "Brand Marketing Manager",
+              "quote": "We used SunnyShoots for an AI-driven product campaign and the results were honestly better than we expected. The visuals looked premium without feeling overly artificial."
+            },
+            {
+              "author": "Hamza Malik",
+              "role": "Creative Director",
+              "quote": "The whole commercial came together beautifully. Sana took a rough idea and turned it into something that actually felt like a real campaign, not just an AI-generated video."
+            },
+            {
+              "author": "Ayesha Khan",
+              "role": "Founder & Content Strategist",
+              "quote": "What I liked most was how easy the process was. From the initial concept to the final edits, everything felt organized and the content came out exactly how we wanted."
+            }
+          ]
+        </script>
+      </section>
+
+      <!-- ============ PORTFOLIO ============ -->
+      <section id="portfolio" aria-label="Portfolio">
+        <div class="container">
+          <div class="portfolio-header">
+            <h2 class="portfolio-header__title">Portfolio</h2>
+          </div>
+
+          <div
+            class="portfolio-filters"
+            id="portfolio-filters"
+            role="tablist"
+            aria-label="Portfolio categories"
+          >
+            <!-- Filter buttons are generated from the portfolio category data. -->
+          </div>
+          <!--
+            <button
+              class="filter-chip is-active"
+              type="button"
+              role="tab"
+              aria-selected="true"
+              data-filter="all"
+            >
+              All Work
+            </button>
+            <button
+              class="filter-chip"
+              type="button"
+              role="tab"
+              aria-selected="false"
+              data-filter="ai-content"
+            >
+              AI Content
+            </button>
+            <button
+              class="filter-chip"
+              type="button"
+              role="tab"
+              aria-selected="false"
+              data-filter="ai-commercials"
+            >
+              AI Commercials
+            </button>
+            <button
+              class="filter-chip"
+              type="button"
+              role="tab"
+              aria-selected="false"
+              data-filter="talking-head"
+            >
+              Talking Head
+            </button>
+            <button
+              class="filter-chip"
+              type="button"
+              role="tab"
+              aria-selected="false"
+              data-filter="motion-graphics"
+            >
+              Motion Graphics
+            </button>
+            <button
+              class="filter-chip"
+              type="button"
+              role="tab"
+              aria-selected="false"
+              data-filter="product-promotions"
+            >
+              Product Promotions
+            </button>
+            <button
+              class="filter-chip"
+              type="button"
+              role="tab"
+              aria-selected="false"
+              data-filter="brand-films"
+            >
+              Brand Films
+            </button>
+            <button
+              class="filter-chip"
+              type="button"
+              role="tab"
+              aria-selected="false"
+              data-filter="content-production"
+            >
+              Content Production
+            </button>
+          </div> -->
+
+          <div class="portfolio-grid" id="portfolio-grid">
+            <!-- Portfolio items injected by interactions.js from #portfolio-data -->
+          </div>
+        </div>
+
+        <!--
+        Each entry needs: title, categories, youtubeUrl, poster (optional), ratio ("9:16" or "16:9").
+        The grid (CSS Grid, auto-flow: dense) reorganizes itself automatically
+        as items are added, removed, or filtered — no manual positions needed.
+      -->
+        <script type="application/json" id="portfolio-categories-data">
+          [
+            { "id": "all", "label": "All Work" },
+            { "id": "food-beverage", "label": "Food & Beverage" },
+            { "id": "ai-commercials", "label": "AI Commercials" },
+            { "id": "talking-head", "label": "Talking Head" },
+            { "id": "motion-graphics", "label": "Motion Graphics" },
+            { "id": "product-promotions", "label": "Product Promotions" },
+            { "id": "ugc", "label": "UGC Commercials" }
+          ]
+        </script>
+        <script type="application/json" id="portfolio-data">
+          [
+            {
+              "title": "AI Commercial",
+              "categories": ["ai-commercials"],
+              "ratio": "9:16",
+              "youtubeUrl": "https://youtube.com/shorts/FgnIlOijzDQ",
+              "poster": ""
+            },
+            {
+              "title": "AI Commercial",
+              "categories": ["ai-commercials", "food-beverage"],
+              "ratio": "9:16",
+              "youtubeUrl": "https://youtube.com/shorts/j-jEzPxx_2w",
+              "poster": ""
+            },
+            {
+              "title": "Talking Head",
+              "categories": ["talking-head", "motion-graphics"],
+              "ratio": "9:16",
+              "youtubeUrl": "https://youtube.com/shorts/vIjK7_hTNNg",
+              "poster": ""
+            },
+            {
+              "title": "UGC Commercial",
+              "categories": ["ugc", "food-beverage"],
+              "ratio": "9:16",
+              "youtubeUrl": "https://youtube.com/shorts/oSC6i-abVOI",
+              "poster": ""
+            },
+
+            {
+              "title": "Food & Beverage Commercial",
+              "categories": ["food-beverage"],
+              "ratio": "9:16",
+              "youtubeUrl": "https://youtube.com/shorts/yWDH4yBYKqM",
+              "poster": ""
+            },
+            {
+              "title": "Product Promotion",
+              "categories": ["product-promotions", "ai-commercials"],
+              "ratio": "9:16",
+              "youtubeUrl": "https://youtube.com/shorts/xWFDU4W1M-8",
+              "poster": ""
+            },
+            {
+              "title": "Product Promotion",
+              "categories": ["product-promotions", "ai-commercials"],
+              "ratio": "9:16",
+              "youtubeUrl": "https://youtube.com/shorts/lPdBR2EpYd4",
+              "poster": ""
+            },
+            {
+              "title": "Product Promotion",
+              "categories": ["product-promotions", "ai-commercials"],
+              "ratio": "9:16",
+              "youtubeUrl": "https://youtube.com/shorts/SY-tKeRSGRk",
+              "poster": ""
+            },
+            {
+              "title": "UGC Commercial",
+              "categories": ["ugc", "food-beverage"],
+              "ratio": "16:9",
+              "youtubeUrl": "https://youtu.be/cmeLPgmWe6M",
+              "poster": ""
+            },
+            {
+              "title": "AI Commercial",
+              "categories": ["ai-commercials"],
+              "ratio": "16:9",
+              "youtubeUrl": "https://youtu.be/eq1XqBdAOSk",
+              "poster": ""
+            },
+            {
+              "title": "Talking Head",
+              "categories": ["talking-head", "motion-graphics"],
+              "ratio": "9:16",
+              "youtubeUrl": "https://youtube.com/shorts/1rNxDc98-S8",
+              "poster": ""
+            },
+            {
+              "title": "Product Promotion",
+              "categories": ["product-promotions", "ai-commercials"],
+              "ratio": "9:16",
+              "youtubeUrl": "https://youtube.com/shorts/2nBdVroTJ0A",
+              "poster": ""
+            },
+            {
+              "title": "Food & Beverage Commercial",
+              "categories": ["food-beverage"],
+              "ratio": "9:16",
+              "youtubeUrl": "https://youtube.com/shorts/eSyaoixm4Bk",
+              "poster": ""
+            },
+            {
+              "title": "UGC Commercial",
+              "categories": ["ugc", "product-promotions"],
+              "ratio": "9:16",
+              "youtubeUrl": "https://youtube.com/shorts/xIxn2vLi-mM",
+              "poster": ""
+            },
+            {
+              "title": "Talking Head",
+              "categories": ["talking-head", "motion-graphics"],
+              "ratio": "9:16",
+              "youtubeUrl": "https://youtube.com/shorts/sqIQVqKiTWA",
+              "poster": ""
+            },
+            {
+              "title": "UGC Commercial",
+              "categories": ["ugc", "product-promotions"],
+              "ratio": "9:16",
+              "youtubeUrl": "https://youtube.com/shorts/xfEgFh7C2a4",
+              "poster": ""
+            },
+            {
+              "title": "Food & Beverage Commercial",
+              "categories": ["food-beverage"],
+              "ratio": "9:16",
+              "youtubeUrl": "https://youtube.com/shorts/SB5Ae_XUVyc",
+              "poster": ""
+            },
+            {
+              "title": "UGC Commercial",
+              "categories": ["ugc", "food-beverage"],
+              "ratio": "9:16",
+              "youtubeUrl": "https://youtube.com/shorts/nQ-8zolRG60",
+              "poster": ""
+            }
+          ]
+        </script>
+      </section>
+
+      <!-- ============ CONTACT ============ -->
+      <section id="contact" aria-label="Contact">
+        <div class="container">
+          <div class="contact-card reveal-up">
+            <div class="contact-card__bg" aria-hidden="true"></div>
+            <div class="contact-card__content">
+              <p class="section-eyebrow section-eyebrow--on-dark">
+                Make Your Next Move
+              </p>
+              <h2 class="contact-card__title">
+                Let&rsquo;s create something<br />that earns attention.
+              </h2>
+
+              <a
+                href="mailto:?subject=Start%20a%20Project"
+                data-contact="email"
+                class="btn btn--primary btn--lg"
+              >
+                Start a project
+                <span aria-hidden="true">&rarr;</span>
+              </a>
+
+              <div class="contact-card__links">
+                <a
+                  href="mailto:?subject=Start%20a%20Project"
+                  data-contact="email"
+                  data-contact-text
+                  class="contact-card__link"
+                  >YOUR_EMAIL_HERE</a
+                >
+                <a
+                  data-contact="instagram"
+                  target="_blank"
+                  rel="noopener"
+                  class="contact-card__link"
+                  >Instagram</a
+                >
+                <a
+                  data-contact="upwork"
+                  target="_blank"
+                  rel="noopener"
+                  class="contact-card__link"
+                  data-contact-optional
+                  >Upwork</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ============ FOOTER ============ -->
+    <footer id="site-footer">
+      <div class="container footer__inner">
+        <div class="footer__brand">
+          <p class="footer__brand-name">Sunny Shoots</p>
+          <p class="footer__brand-desc">
+            A creative agency for brands that want results. We make content that
+            converts attention into growth.
+          </p>
+
+          <div class="footer__founder">
+            <span class="footer__founder-label">Founder</span>
+            <span class="footer__founder-name">Sana Ur Rehman</span>
+          </div>
+        </div>
+
+        <nav class="footer__col" aria-label="Explore">
+          <h3 class="footer__col-title">Explore</h3>
+          <ul class="footer__links">
+            <li><a href="#featured-work">Work</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#trust">About</a></li>
+          </ul>
+        </nav>
+
+        <div class="footer__col">
+          <h3 class="footer__col-title">Connect</h3>
+          <ul class="footer__links">
+            <li>
+              <span class="footer__links-label">Instagram</span>
+              <a data-contact="instagram" target="_blank" rel="noopener"
+                >Instagram</a
+              >
+            </li>
+            <li>
+              <span class="footer__links-label">Upwork</span>
+              <a data-contact="upwork" target="_blank" rel="noopener">Upwork</a>
+            </li>
+            <li>
+              <span class="footer__links-label">Email</span>
+              <a href="mailto:?subject=Start%20a%20Project" data-contact="email"
+                >Email</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p>&copy; 2026 Sunny Shoots. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Scripts (order matters: dependencies before main.js, which initializes them) -->
+    <script src="js/animation.js" defer></script>
+    <script src="js/interactions.js" defer></script>
+    <script src="js/main.js" defer></script>
+  </body>
+</html>
